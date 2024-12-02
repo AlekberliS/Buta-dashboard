@@ -1,0 +1,97 @@
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  width: 90%;
+  max-width: 400px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Calendar Wrapper */
+.rbc-calendar {
+    background: #f9fafc;
+    border: 1px solid #e5e7eb;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Toolbar Styling */
+  .custom-toolbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background: #4f46e5;
+    color: white;
+    font-weight: bold;
+    border-radius: 8px 8px 0 0;
+  }
+  
+  .custom-toolbar button {
+    background: #3b82f6;
+    border: none;
+    padding: 8px 12px;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .custom-toolbar button:hover {
+    background: #2563eb;
+  }
+  
+  .toolbar-label {
+    font-size: 1.2rem;
+    text-transform: capitalize;
+  }
+  
+  /* Event Item */
+  .event-item {
+    background: linear-gradient(135deg, #4ade80, #22c55e);
+    padding: 5px 10px;
+    border-radius: 4px;
+    color: white;
+    font-size: 0.9rem;
+    font-weight: bold;
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s;
+  }
+  
+  .event-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Selected Slot */
+  .rbc-selected-cell {
+    background: rgba(79, 70, 229, 0.3) !important;
+  }
+  
+  /* Popup */
+  .rbc-overlay {
+    background: white;
+    border: 1px solid #e5e7eb;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+  }
+  
+  /* Day View Styling */
+  .rbc-day-slot .rbc-time-slot {
+    border-color: #d1d5db;
+  }
+  
